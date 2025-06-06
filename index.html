@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lavanya Chandran">
+    <meta name="description"
+        content="A simple weather app by Lavanya Chandran using OpenWeatherMap API. Search for any city to view current weather conditions.">
+    <meta name="keywords"
+        content="Weather App, OpenWeather API, Lavanya Chandran, JavaScript Project, Bootstrap, Web Application">
+    <title>Weather Report App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Weather Search Section -->
+    <section id="weather" class="bg-white py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🌦️ Weather Forecast</h2>
+            <p class="text-center text-muted mb-4">Enter your city name below to get the current weather report.</p>
+
+            <div class="card p-4 rounded-2 shadow-lg">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchWeather" placeholder="E.g., Chennai, Tokyo, New York" />
+                    <button class="btn btn-primary" onclick="getWeatherReport()">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+               
+            </div>
+             <div id="resultWeather" class="mt-4"></div>
+        </div>
+    </section>
+
+
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
